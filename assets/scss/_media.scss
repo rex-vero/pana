@@ -1,0 +1,27 @@
+@media only screen and (max-width:990px) {
+    .large {
+        display: none;
+    }
+
+    .bi-list {
+        display: block;
+    }
+
+    .mt {
+        margin-top: 8.5rem;
+    }
+
+    .logo-sm {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:778px) {
+    .text-min {
+        display: block;
+    }
+
+    .div-sm {
+        display: none;
+    }
+}
