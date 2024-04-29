@@ -11,24 +11,22 @@ support.addEventListener('click', () => {
 });
 let sum = 100000;
 let num = 3;
-pay.addEventListener('input', () => {
+const calc = (pay, month, sum, num) => {
     const prices = document.querySelectorAll('.price');
     const payToman = document.getElementById('pay-toman');
-    const dash = input => input.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-    payToman.textContent = dash(pay.value);
-    sum = dash(pay.value * num);
-    for (const price of prices) {
-        price.textContent = sum;
-    }
-});
-month.addEventListener('input', () => {
-    const prices = document.querySelectorAll('.price');
     const months = document.getElementById('months');
     const dash = input => input.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-    num = +month.value;
-    sum = dash(pay.value * num);
-    months.textContent = month.value;
+    months.textContent = month;
+    payToman.textContent = dash(pay);
+    num = +month;
+    sum = dash(pay * num);
     for (const price of prices) {
         price.textContent = sum;
     }
+}
+pay.addEventListener('input', () => {
+    calc(pay.value, month.value, sum, num);
+});
+month.addEventListener('input', () => {
+    calc(pay.value, month.value, sum, num);
 });
