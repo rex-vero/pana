@@ -13,7 +13,7 @@
     <title>پانا | پلتفرم هوشمند وام سپاری و پس انداز چرخشی</title>
 </head>
 
-<body class="d-flex flex-column">
+<body class="d-flex bg flex-column">
     <nav id="nav" class="navbar align-self-center d-flex justify-content-between py-2 px-3">
         <i data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
             class="bi bi-list fs-3"></i>
@@ -25,14 +25,15 @@
             <a href="#" class="text-decoration-none texts fs-6 align-self-center">دانلود اپ</a>
             <a href="#" class="text-decoration-none texts fs-6 align-self-center">درباره ما</a>
         </div>
-        <span class="fs-5 text-black fw-bolder text-center text-min">پــــــانــــــا</span>
+        <h1 class="fs-5 text-black fw-bolder text-center text-min">پــــــانــــــا</h1>
         <img src="./assets/image/logo.webp" class="img-fluid logo-sm logo" alt="logo">
         <div class="div-sm">
             <a href="#" class="vam text-decoration-none text-white py-2 px-4">دریافت وام</a>
         </div>
     </nav>
-    <header class="header position-absolute d-flex flex-column">
-        <img src="./assets/image/star.svg" class="logo star1 img-fluid" alt="star">
+    <header class="header d-flex flex-column">
+        <img src="./assets/image/star.svg" class="stars logo star1 img-fluid" alt="star">
+        <img src="./assets/image/star.svg" class="stars star2 img-fluid" alt="star">
         <div class="d-flex container-fluid justify-content-between align-items-center flex-column flex-lg-row mt">
             <div class="d-flex flex-column px-0 px-lg-5 fw-bold text-white">
                 <span class="text-lg-start text-center small-text">ما همو داریم :)</span>
@@ -40,18 +41,55 @@
                 <span class="text-lg-start text-center fs-2">پلتفرم هوشمند وام سپاری و پس انداز چرخشی</span>
             </div>
             <div class="px-0 px-lg-5">
-                <div class="blur-card d-flex flex-column">
+                <div class="blur-card d-flex container-fluid flex-column">
                     <span class="text-center text-white fs-5 mt-1">با پانا خودت انتخاب می کنی</span>
                     <div class="d-flex justify-content-between">
                         <span class="fs-6 text-white">قسط ماهیانه</span>
-                        <span class="fs-6 text-white">۱۰۰٬۰۰۰ تومان</span>
+                        <span class="fs-6 text-white d-flex gap-1">
+                            <span>100,000</span>
+                            <span>تومان</span>
+                        </span>
                     </div>
                     <div class="d-flex flex-column">
-                        <input dir="ltr" class="range w-75 align-self-center" step="50000" value="0" min="100000"
-                            max="10000000" type="range">
+                        <input id="pay" dir="ltr" class="range w-75 align-self-center" step="50000" value="100000"
+                            min="100000" max="10000000" type="range">
                         <div class="d-flex justify-content-between">
-                            <span class="fs-6 text-white">قسط ماهیانه</span>
-                            <span class="fs-6 text-white">۱۰۰٬۰۰۰ تومان</span>
+                            <label for="pay" class="small-text px-4 text-white">۱۰٬۰۰۰٬۰۰۰ تومان</label>
+                            <label for="pay" class="small-text px-4 text-white">۱۰۰٬۰۰۰ تومان</label>
+                        </div>
+                        <div class="d-flex pt-3 justify-content-between">
+                            <span class="fs-6 text-white">مدت بازپرداخت</span>
+                            <span class="fs-6 text-white d-flex gap-1">
+                                <span>3</span>
+                                <span>ماهه</span>
+                            </span>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <input id="month" dir="ltr" class="range w-75 align-self-center" step="1" value="3" min="3"
+                                max="24" type="range">
+                            <div class="d-flex justify-content-between">
+                                <label for="month" class="small-text px-4 text-white">24 ماهه</label>
+                                <label for="month" class="small-text px-4 text-white">3 ماهه</label>
+                            </div>
+                            <div class="pt-3 d-flex justify-content-around">
+                                <div class="d-flex justify-content-around w-100">
+                                    <div class="d-flex flex-column">
+                                        <span class="text-white">مبلغ وام:</span>
+                                        <span class="text-white">بازپرداخت نهایی:</span>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <span class="text-white">۳۰۰٬۰۰۰ تومان</span>
+                                        <span class="text-white">۳۰۰٬۰۰۰ تومان</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column w-100">
+                                    <div class="d-flex justify-content-around">
+                                        <span class="text-white">بهره تسهیلات:</span>
+                                        <span class="text-white">0 درصد</span>
+                                    </div>
+                                    <a href="#" class="vam2 text-decoration-none align-self-center mt-2 py-2 px-4">دریافت وام</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -75,6 +113,7 @@
             </div>
         </div>
     </div>
+    <section class="bg-white vh-100"></section>
 </body>
 
 </html>
