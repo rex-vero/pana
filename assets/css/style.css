@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.bg {
+  background-color: #641515;
+}
+
 .header {
   background-color: #641515;
   height: 85vh;
@@ -41,7 +45,7 @@ html {
   box-shadow: 1px 2px 5px black;
 }
 .vam:hover,
-.vam :focus {
+.vam :visited {
   background-color: #580e0e;
 }
 
@@ -50,7 +54,7 @@ html {
   transition: 0.5s;
 }
 .texts:hover,
-.texts :focus {
+.texts :visited {
   color: #641515;
 }
 
@@ -90,8 +94,21 @@ html {
   right: 70px;
 }
 
+.star2 {
+  position: absolute;
+  top: 210px;
+  left: 90px;
+  height: 20vh;
+}
+
+.stars {
+  opacity: 0;
+  animation: stars 1s 1 ease-in-out forwards;
+  scale: 0;
+}
+
 .mt {
-  margin-top: 16.5rem;
+  margin-top: 8.5rem;
 }
 
 .small-text {
@@ -99,8 +116,8 @@ html {
 }
 
 .blur-card {
-  height: 20rem;
-  width: 40rem;
+  height: 40vh;
+  aspect-ratio: 16/9;
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 2px #974747;
   backdrop-filter: blur(5px);
@@ -112,6 +129,19 @@ html {
   accent-color: #ffae03;
   cursor: grab;
   background-color: transparent;
+}
+
+.vam2 {
+  color: #641515;
+  background-color: #ffae03;
+  border-radius: 10px;
+  transition: 0.5s;
+  box-shadow: 1px 2px 5px black;
+}
+.vam2:hover,
+.vam2 :visited {
+  color: #641515;
+  background-color: #f5a600;
 }
 
 @media only screen and (max-width: 990px) {
@@ -134,6 +164,16 @@ html {
   }
   .div-sm {
     display: none;
+  }
+}
+@keyframes stars {
+  from {
+    scale: 0;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
   }
 }
 
