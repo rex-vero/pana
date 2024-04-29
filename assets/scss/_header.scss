@@ -137,3 +137,48 @@
         background-color: #f5a600;
     }
 }
+
+.support {
+    right: 30px;
+    position: fixed;
+    bottom: 10px;
+    cursor: pointer;
+    z-index: 1;
+    height: 10vh;
+}
+
+.tel {
+    bottom: 10px;
+    right: 150px;
+    scale: 0;
+    transition: .2s;
+}
+
+.whats {
+    bottom: 60px;
+    right: 120px;
+    scale: 0;
+    transition: .2s;
+}
+
+.email {
+    bottom: 95px;
+    right: 70px;
+    scale: 0;
+    transition: .2s;
+}
+
+.call {
+    bottom: 105px;
+    right: 10px;
+    scale: 0;
+    transition: .2s;
+}
+
+.size {
+    height: 8vh;
+}
+
+.scale {
+    scale: 1;
+}
