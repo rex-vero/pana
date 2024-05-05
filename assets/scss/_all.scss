@@ -1,7 +1,13 @@
+@font-face {
+    font-family: font-vazir;
+    src: url('../font/Vazir-Bold-FD-WOL.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: font-vazir;
 }
 
 html {

@@ -18,6 +18,10 @@
     .blur-card {
         display: none;
     }
+
+    .blur-card2 {
+        display: flex;
+    }
 }
 
 @media only screen and (max-width:778px) {
@@ -27,5 +31,12 @@
 
     .div-sm {
         display: none;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .vam2 {
+        font-size: 14px;
+        padding: 5px 10px;
     }
 }
