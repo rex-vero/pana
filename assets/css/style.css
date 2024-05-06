@@ -35,7 +35,7 @@ html {
 
 .header {
   background-color: #641515;
-  height: 85vh;
+  height: 60vh;
   width: 100%;
 }
 
@@ -128,9 +128,9 @@ html {
 
 .star3 {
   position: absolute;
-  bottom: 90px;
-  left: 190px;
-  height: 15vh;
+  top: 140px;
+  left: 400px;
+  height: 12vh;
 }
 
 .stars {
@@ -171,6 +171,13 @@ html {
   background-color: transparent;
 }
 
+.range2 {
+  outline: none;
+  accent-color: #641515;
+  cursor: grab;
+  background-color: transparent;
+}
+
 .vam2 {
   color: #641515;
   background-color: #ffae03;
@@ -190,7 +197,7 @@ html {
   position: fixed;
   bottom: 10px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 6;
   height: 10vh;
 }
 
@@ -199,7 +206,7 @@ html {
   right: 150px;
   scale: 0;
   transition: 0.2s;
-  z-index: 1;
+  z-index: 6;
 }
 
 .whats {
@@ -207,7 +214,7 @@ html {
   right: 120px;
   scale: 0;
   transition: 0.2s;
-  z-index: 1;
+  z-index: 6;
 }
 
 .email {
@@ -215,7 +222,7 @@ html {
   right: 70px;
   scale: 0;
   transition: 0.2s;
-  z-index: 1;
+  z-index: 6;
 }
 
 .call {
@@ -223,7 +230,7 @@ html {
   right: 10px;
   scale: 0;
   transition: 0.2s;
-  z-index: 1;
+  z-index: 6;
 }
 
 .size {
@@ -234,15 +241,36 @@ html {
   scale: 1;
 }
 
+.text-color {
+  color: #641515;
+}
+
+.div {
+  padding: 0 300px;
+}
+
+.bg-radius {
+  background-color: #ffae03;
+  height: 400px;
+  width: 500px;
+  bottom: 0;
+  z-index: 1;
+  border-radius: 5px;
+  border-top-left-radius: 200px;
+}
+
+.phone-img {
+  height: 40rem;
+  width: 17rem;
+  z-index: 2;
+}
+
 @media only screen and (max-width: 990px) {
   .large {
     display: none;
   }
   .bi-list {
     display: block;
-  }
-  .mt {
-    margin-top: 8.5rem;
   }
   .logo-sm {
     display: block;
